@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import './client.css'
 import Navbar from './Navbar';
+import { API_URL } from "../Api_Url";
+axios.defaults.withCredentials = true;
 export default function Client({ myStorage,currentUser,setCurrentUser }) {
 
   const [reviews, setReviews] = useState([]);
@@ -14,7 +16,7 @@ export default function Client({ myStorage,currentUser,setCurrentUser }) {
 
       try {
         console.log(currentUser);
-        const res = await axios.get(`/api/feedback/${currentUser.hotelName}`)
+        const res = await axios.get(`${API_URL}/api/feedback/${currentUser.hotelName}`)
         setReviews(res.data[0].reviews);
 
       }
