@@ -1,0 +1,31 @@
+img{
+    margin: 5%;
+}
+
+.outer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4%;
+}
+.outer-container h2{
+    display: inline;
+}
+.qr-code-title{
+    width: 100%;
+    text-align: center;
+}
+
+.print{
+    display: inline-block;
+    margin-left: 4%;
+    cursor: pointer;
+}
+
+@media print {
+    .print,.main-nav{
+        display: none;
+    }
+   
+}

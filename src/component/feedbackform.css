@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.outer-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to top left, #3ed8af, #a8f5ff);
+}
+.outer-box-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background:linear-gradient(to top left, #3ed8af, #a8f5ff);
+}
+
+.inner-box{
+    background:linear-gradient(to top left, #ffffffff, #ffffff33);
+    backdrop-filter: blur(8px);
+    margin: 2%;
+    padding: 2% 4%;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 2px 2px 5px #2773af;
+    z-index: 2;
+}
+.signup-header{
+    padding: 8px;
+}
+.signup-header h1,.thankyou{
+    
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.signup-header p{
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.signup-body{
+    margin: 20px 0;
+}
+
+.signup-body div{
+    margin: 10px 0;
+}
+
+.signup-body div label{
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body div input,textarea{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.signup-body div input[type="submit"]{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup-body div input[type="submit"]:hover{
+    background-color: #2773af;
+}
+
+.signup-footer div{
+    color: #555;
+    text-align: center;
+}
+
+
+.signup-footer div a{
+    color: #2773af;
+    text-align: center;
+}
+
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    background: linear-gradient(to top right,#ffffff33,#ffffffff);
+    position: absolute;
+}
+
+
+.c1{
+    top: 100px;
+    left: 40px;
+}
+
+.c2{
+    bottom:100px;
+    right: 40px;
+}
+
+#Dine-in{
+    width: max-content;
+    margin-right: 4px;
+}
+.dine-in-label-1{
+    margin: 3px !important;
+}
+.dine-in-label{
+    display: inline !important;   
+    
+}
+
+#food-rating-label{
+    display: block;
+    font-weight: bold;
+}
+
+.food-rating{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+}
+
+/* .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+} */
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.hide{
+    display: none;
+}
