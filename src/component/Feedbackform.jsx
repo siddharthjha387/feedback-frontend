@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from "axios";
-import { API_URL } from '../../Api_Url';
-axios.defaults.withCredentials = true;
-
-
 import { useState } from 'react';
 import './feedbackform.css';
+import { API_URL } from "../Api_Url";
+axios.defaults.withCredentials = true;
 export default function FeedbackForm() {
 
   const [currentHotel, setCurrentHotel] = useState();

@@ -1,11 +1,12 @@
 import axios from "axios";
-import { API_URL } from '../../Api_Url';
-axios.defaults.withCredentials = true;
+
 
 import React, { useRef, useState } from 'react'
 
 
 import './feedbackform.css'
+import { API_URL } from "../Api_Url";
+axios.defaults.withCredentials = true;
 export default function Register() {
     const [success, setSuccess] = useState(false);
     const [failure, setFailure] = useState(false);
