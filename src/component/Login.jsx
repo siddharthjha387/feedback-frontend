@@ -1,7 +1,8 @@
 
 import { useRef, useState } from "react";
 import axios from "axios";
-
+import { API_URL } from '../../Api_Url';
+axios.defaults.withCredentials = true;
 
 import './feedbackform.css'
 import { Navigate } from "react-router-dom";
@@ -22,7 +23,7 @@ export default function Login({ myStorage, setCurrentUser }) {
 
         console.log(user);
         try {
-            const res = await axios.post("/api/users/login", user);
+            const res = await axios.post(`${API_URL}/api/users/login`, user);
             myStorage.setItem("user", JSON.stringify(res.data))
             setCurrentUser(res.data)
             setFailure(false);

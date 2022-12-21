@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from "axios";
+import { API_URL } from '../../Api_Url';
+axios.defaults.withCredentials = true;
+
+
 import { useState } from 'react';
 import './feedbackform.css';
 export default function FeedbackForm() {
@@ -23,7 +27,8 @@ export default function FeedbackForm() {
       feedback
     };
     try {
-      const res = await axios.post(`/api/feedback/${str}`, newFeedback);
+      const res = await axios.post(`${API_URL}/api/feedback/${str}`, newFeedback);
+      
       setSubmitted(true);
 
     } catch (err) {
@@ -34,7 +39,7 @@ export default function FeedbackForm() {
   useEffect(() => {
     const getHotel = async () => {
       try {
-        const res = await axios.get("/api/hotels/" + str);
+        const res = await axios.get(`${API_URL}/api/hotels/` + str);
         setCurrentHotel(res.data);
       } catch (err) {
         console.log(err);

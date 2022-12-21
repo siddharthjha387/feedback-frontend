@@ -16,7 +16,7 @@ const print=()=>{
     <div className="print primary-button" onClick={print}>Print</div>
     </div>
    
-    <img src={`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=localhost:3000/give-feedback/${currentUser.hotelName}`} alt="" />
+    <img src={`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://feedback-frontend-cgv.pages.dev/give-feedback/${currentUser.hotelName}`} alt="" />
 
     </div>
 

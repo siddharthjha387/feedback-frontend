@@ -1,4 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
+import { API_URL } from '../../Api_Url';
+axios.defaults.withCredentials = true;
+
 import React, { useRef, useState } from 'react'
 
 
@@ -29,7 +32,7 @@ export default function Register() {
         };
 
         try {
-            const res = await axios.post("/api/users/register", newUser);
+            const res = await axios.post(`${API_URL}/api/users/register`, newUser);
             console.log(res);
             setFailure(false);
             setSuccess(true);
