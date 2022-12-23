@@ -20,9 +20,9 @@ export default function Navbar({currentUser,setCurrentUser,myStorage}) {
 
             <div className={active?'nav-links nav-links-active':'nav-links'}  id="nav-links">
                 <ul className="flex">
-                    <li><a href="/contact" className="hover-link">Contact</a></li>
+                    {/* <li><a href="/contact" className="hover-link">Contact</a></li> */}
                     <li><a href="/about" className="hover-link">About</a></li>
-                    <li><a href="/" className="hover-link">Pricing</a></li>
+                    {/* <li><a href="/" className="hover-link">Pricing</a></li> */}
                     <li><a href="/client" className="hover-link">Feedbacks</a></li>
                    
 				    {currentUser ?

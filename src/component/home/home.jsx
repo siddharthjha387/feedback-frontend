@@ -7,11 +7,15 @@ export default function Home({ myStorage, currentUser, setCurrentUser }) {
 
     return (
         <>
-
-            <div class="top-banner">
+ <div class="top-banner">
                 <div class="container">
+                
                     <div class="small-bold-text banner-text">
-                        New to feedback Hub: Sign up
+                        {currentUser==null?(<> New to QuickFeed : Sign up</>):(<>
+                        If you have any query let us know at &nbsp; 
+                        <a href="mailto:akshit@gmail.com" id='email'>akshit@gmail.com</a>
+                        </>)}
+                       
                     </div>
 
                 </div>
@@ -26,7 +30,7 @@ export default function Home({ myStorage, currentUser, setCurrentUser }) {
                         <p>
                             Ha bhai reviews dekho apne hotel ke!!
                         </p>
-                        <a href="#" class="primary-button get-started-btn">Get Started</a>
+                        <a href="/login" class="primary-button get-started-btn">Get Started</a>
                     </div>
                     <div class="header-right">
                         <img src={img} alt="" class="img-desk" />
