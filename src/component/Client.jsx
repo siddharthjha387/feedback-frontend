@@ -36,12 +36,12 @@ export default function Client({ myStorage, currentUser, setCurrentUser }) {
 
         <div className="client-page">
           <div className="greet">
-            Hello currentUser.fullName! 😊
+            Hello {currentUser.fullName}! 😊
           </div>
 
         </div>
         <h2 className="feedback-title">
-          Customer feedbacks for currentUser.hotelFullName:
+          Customer feedbacks for {currentUser.hotelFullName}:
         </h2>
         <div className='outer-container-feedback'>
           {reviews.map((review) => (
