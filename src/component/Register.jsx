@@ -33,6 +33,7 @@ export default function Register() {
         };
 
         try {
+            console.log(API_URL);
             const res = await axios.post(`${API_URL}/api/users/register`, newUser);
             console.log(res);
             setFailure(false);

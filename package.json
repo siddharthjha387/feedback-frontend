@@ -1,5 +1,5 @@
 {
-  "name": "feedback",
+  "name": "quickfeed",
   "version": "0.1.0",
   "private": true,
   "proxy": "https://backend-restaurant-feedback-production.up.railway.app/",

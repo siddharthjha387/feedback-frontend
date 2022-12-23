@@ -26,7 +26,7 @@ function App() {
   return (
 
 
-    <div className="App container">
+    <div className="App">
 
       <Routes>
         <Route exact path='/' element={< Home myStorage={myStorage} currentUser={currentUser} setCurrentUser={setCurrentUser} />}></Route>
