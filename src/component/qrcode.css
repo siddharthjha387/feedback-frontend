@@ -29,3 +29,13 @@ img{
     }
    
 }
+
+@media screen and (max-width:770px) {
+    .print{
+        margin: 9% 0;
+    }
+    .outer-container img{
+        height: 400px;
+    }
+    
+}

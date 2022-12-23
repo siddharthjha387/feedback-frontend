@@ -35,3 +35,16 @@
     gap: 6px;
    
 }
+
+@media screen and(max-width:563px) {
+    .client-page .greet{
+        font-size: 35px;
+    }
+    .feedback-title{
+        padding: 1%;
+    }
+    .inner-container{
+        width: 100%;
+        margin: 4%;
+    }
+}
