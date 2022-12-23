@@ -36,15 +36,20 @@
    
 }
 
-@media screen and(max-width:563px) {
+@media screen and (max-width:767px) {
     .client-page .greet{
         font-size: 35px;
     }
     .feedback-title{
+        font-size: 21px;
         padding: 1%;
     }
     .inner-container{
-        width: 100%;
+        width: 80%;
         margin: 4%;
+    }
+    .outer-container-feedback{
+        flex-direction: column;
+
     }
 }
