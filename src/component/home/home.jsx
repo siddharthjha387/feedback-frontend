@@ -13,7 +13,7 @@ export default function Home({ myStorage, currentUser, setCurrentUser }) {
                     <div class="small-bold-text banner-text">
                         {currentUser == null ? (<> New to QuickFeed : Sign up</>) : (<>
                             If you have any query let us know at &nbsp;
-                            <a href="mailto:akshit@gmail.com" id='email'>akshit@gmail.com</a>
+                            <a href="mailto:siddharth@gmail.com" id='email'>siddharth@gmail.com</a>
                         </>)}
 
                     </div>
