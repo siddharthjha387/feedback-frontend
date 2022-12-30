@@ -21,7 +21,7 @@ export default function Login({ myStorage, setCurrentUser }) {
             password: passwordRef.current.value,
         };
 
-        console.log(user);
+       
         try {
             const res = await axios.post(`${API_URL}/api/users/login`, user);
             myStorage.setItem("user", JSON.stringify(res.data))
